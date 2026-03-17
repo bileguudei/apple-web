@@ -8,6 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .center {
@@ -46,7 +47,7 @@ nav img {
   /* background-color: yellowgreen; */
 }
 
-.main {
+main {
   width: 100vw;
   height: 692px;
   background-position: center;
@@ -118,8 +119,112 @@ nav img {
   color: black;
 }
 
-/* #gift button {
-  background-color: #0071e3;
+.product-container {
+  gap: 12px;
+  display: grid;
+  margin: 12px;
+  grid-auto-rows: 580px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product {
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 36px;
+}
+
+.product-title-contain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h3 {
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.product-subtitle {
+  color: #1d1d1f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.applelogo {
+  width: 26.353px;
+  height: 32px;
+  margin-top: 5px;
+}
+
+#watch {
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.white {
   color: white;
-  padding: 15px 25px;
-} */
+}
+
+.black {
+  color: black;
+}
+
+.product-container #p1 {
+  background-image: url(img/jpg/product1.jpg);
+}
+
+.product-container #p2 {
+  background-image: url(img/jpg/product2.jpg);
+  justify-content: end;
+}
+
+.product-title-contain img {
+  margin-bottom: 10px;
+}
+
+.product-container #p3 {
+  background-image: url(img/jpg/product3.jpg);
+}
+
+.product-container #p4 {
+  background-image: url(img/jpg/product4.jpg);
+}
+
+.product-container #p5 {
+  background-image: url(img/jpg/product5.jpg);
+}
+
+.product-container #p6 {
+  background-image: url(img/jpg/product6.jpg);
+}
+
+.gradient {
+  padding-top: 330px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
