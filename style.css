@@ -5,6 +5,10 @@
   font-family: "Inter", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -129,6 +133,7 @@ main {
 
 .product {
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,9 +175,8 @@ h3 {
 #watch {
   color: #000;
   text-align: center;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .white {
@@ -184,7 +188,7 @@ h3 {
 }
 
 .product-container #p1 {
-  background-image: url(img/jpg/product1.jpg);
+  background-image: url(img/jpg/ipadDesktop.jpg);
 }
 
 .product-container #p2 {
@@ -197,11 +201,11 @@ h3 {
 }
 
 .product-container #p3 {
-  background-image: url(img/jpg/product3.jpg);
+  background-image: url(img/jpg/macbookDesktop.jpg);
 }
 
 .product-container #p4 {
-  background-image: url(img/jpg/product4.jpg);
+  background-image: url(img/jpg/iwatchDesktop.jpg);
 }
 
 .product-container #p5 {
@@ -213,7 +217,7 @@ h3 {
 }
 
 .gradient {
-  padding-top: 330px;
+  padding-top: 360px;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -227,4 +231,140 @@ h3 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  column-gap: 15px;
+  overflow: scroll;
+  align-items: center;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.sliders {
+  padding: 50px 50px;
+  display: flex;
+  align-items: end;
+  height: 668px;
+  width: 1250px;
+  color: white;
+  flex-shrink: 0;
+  font-size: 20px;
+  /* position: relative; */
+  scroll-snap-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slide1 {
+  background-image: url(sliders/napoleon.jpg);
+}
+
+#slide2 {
+  background-image: url(sliders/bad-monkey.jpg);
+}
+
+#slide3 {
+  background-image: url(sliders/instigators.jpg);
+}
+
+#slide4 {
+  background-image: url(sliders/k-pop-idols.jpg);
+}
+
+#slide5 {
+  background-image: url(sliders/season-pass.jpg);
+}
+
+#slide6 {
+  background-image: url(sliders/pressumed-innocent.jpg);
+}
+
+#slide7 {
+  background-image: url(sliders/pachinko.jpg);
+}
+
+#slide8 {
+  background-image: url(sliders/baseball.jpg);
+}
+
+#slide9 {
+  background-image: url(sliders/lady-in-the-lake.jpg);
+}
+
+#slide10 {
+  background-image: url(sliders/morning-show.jpg);
+}
+
+.stream-button {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 0;
+}
+
+.category {
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+
+.tseg {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0px -10px;
+}
+
+.info {
+  opacity: 0.999;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.slider-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#bullets {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 13px;
+}
+
+.bullet {
+  /* display: block; */
+  width: 8px;
+  height: 8px;
+  opacity: 0.75;
+  border-radius: 50%;
+  background-color: #0000006b;
+}
+
+#ursdag-zuragnuud {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  gap: 20px;
+}
+
+#ursdag-zuragnuud img {
+  width: 417px;
+  height: 236px;
 }
