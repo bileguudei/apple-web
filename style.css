@@ -356,15 +356,165 @@ footer {
   background-color: #0000006b;
 }
 
-#ursdag-zuragnuud {
+#last {
   width: 100vw;
+  overflow: hidden;
+}
+
+#ursdag-zuragnuud {
+  width: max-content;
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  gap: 20px;
+  animation: ursdag 30s linear infinite;
+}
+
+@keyframes ursdag {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.news {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  min-width: 417px;
+  height: 236px;
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+}
+
+.music {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 417px;
+  height: 236px;
+  gap: 20px;
+  padding: 25px;
+}
+
+.music-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 20px;
 }
 
-#ursdag-zuragnuud img {
-  width: 417px;
-  height: 236px;
+#ursdag-zuragnuud .music-img {
+  width: 196px;
+  height: 196px;
+}
+
+.info {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.224px;
+}
+
+.music:has(.applemusicsvg) .applemusicsvg {
+  padding-top: 170px;
+}
+
+#m1 {
+  background-color: #1b2632;
+}
+
+#m2 {
+  background-color: #eae6e1;
+}
+
+#n3 {
+  background-image: url(ursdag/3.jpg);
+}
+
+#n4 {
+  background-image: url(ursdag/4.jpg);
+}
+
+#n5 {
+  background-image: url(ursdag/5.jpg);
+}
+
+#n6 {
+  background-image: url(ursdag/6.jpg);
+}
+
+#n7 {
+  background-image: url(ursdag/7.jpg);
+}
+
+#m8 {
+  background-color: rgb(64, 13, 14);
+}
+
+#n9 {
+  background-image: url(ursdag/9.jpg);
+}
+
+#m10 {
+  background-color: rgb(38, 38, 38);
+}
+
+/* #last:has(.news:hover) #ursdag-zuragnuud {
+  animation-play-state: paused;
+  filter: grayscale(100%);
+}
+
+#last:has(.music:hover) #ursdag-zuragnuud {
+  animation-play-state: paused;
+  filter: grayscale(100%);
+}
+
+.music:hover {
+  filter: brightness(100%) !important;
+} */
+
+#last:hover #ursdag-zuragnuud {
+  animation-play-state: paused;
+}
+
+#last:hover .music,
+#last:hover .news {
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.music:hover,
+.news:hover {
+  filter: brightness(100%) !important;
+  transform: scale(1.05);
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.news:hover .ursdag-button {
+  opacity: 1;
+}
+
+.music:hover .ursdag-button {
+  opacity: 1;
+}
+
+.ursdag-button {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background-color: white;
+  top: 100px;
+  left: 160px;
+  z-index: 1;
 }
