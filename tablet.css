@@ -1,0 +1,174 @@
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 20px;
+  }
+
+  nav img {
+    width: 18px;
+    padding: 2px;
+  }
+
+  #search-icon {
+    margin-top: 3px;
+  }
+
+  #menu-icon {
+    margin-top: 3px;
+    display: block;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .donation {
+    padding: 0 40px;
+  }
+
+  main {
+    width: 100%;
+    height: 650px;
+  }
+
+  #iphone16pro {
+    background-image: url(tablet-view-img/main/main-iphone-tablet.jpg);
+  }
+
+  #iphone16 {
+    background-image: url(tablet-view-img/main/main-iphone2-tablet.jpg);
+  }
+
+  #gift {
+    display: none;
+  }
+
+  #visible-item {
+    display: flex;
+    width: 100vw;
+    background-image: url(tablet-view-img/main/main-ipad-tablet.jpg);
+  }
+
+  .hide-item {
+    display: flex;
+  }
+
+  #p1 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #p2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #p3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #p6 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /* .product-container {
+    max-width: 100vw;
+  } */
+
+  h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .product-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product-container #p2 {
+    background-image: url(tablet-view-img/main/product/product-airpod-tablet.jpg);
+  }
+
+  .product-container #p4 {
+    background-image: url(tablet-view-img/main/product/iwatchTABLET.jpg);
+  }
+
+  .product-container #p3 {
+    background-image: url(tablet-view-img/main/product/macbookTABLET.jpg);
+  }
+
+  .product-container #p1 {
+    background-image: url(tablet-view-img/main/product/tablet-product-p4.png);
+  }
+
+  .product-container #p6 {
+    background-image: url(tablet-view-img/main/product/tablet-product-p5.jpg);
+    justify-content: flex-end;
+  }
+
+  .change {
+    display: none;
+  }
+
+  .sliders {
+    padding: 20px 20px;
+    width: 689px;
+    height: 368px;
+  }
+
+  .stream-button {
+    padding: 8px 14px;
+  }
+
+  .category {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .info {
+    font-weight: 400;
+    opacity: 0.999;
+  }
+
+  .music {
+    max-width: 286px;
+    height: 161px;
+  }
+
+  .news {
+    max-width: 286px;
+    height: 161px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    text-wrap: nowrap;
+  }
+
+  .product {
+    padding: 30px;
+  }
+
+  #watch {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+
+  /* .music-img {
+    width: 144px;
+    max-height: 120px;
+  } */
+}

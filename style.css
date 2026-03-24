@@ -12,21 +12,22 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#menu-icon {
+  display: none;
 }
 
 nav {
+  display: flex;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 44px;
   background-color: #f5f5f7;
-  gap: 35px;
+  gap: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a {
@@ -41,18 +42,25 @@ nav img {
   width: 14px;
 }
 
+nav .gap {
+  display: flex;
+  gap: 2vw;
+}
+
 .donation {
   margin-top: 44px;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   font-size: 14px;
   color: #1d1d1f;
   font-weight: 500;
-  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   height: 692px;
   background-position: center;
   display: flex;
@@ -128,7 +136,8 @@ main {
   display: grid;
   margin: 12px;
   grid-auto-rows: 580px;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .product {
@@ -138,6 +147,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 55px 36px;
+  gap: 16px;
 }
 
 .product-title-contain {
@@ -177,6 +187,11 @@ h3 {
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
+  font-size: 20px;
+}
+
+#applewatch {
+  height: 40px;
 }
 
 .white {
@@ -217,7 +232,7 @@ h3 {
 }
 
 .gradient {
-  padding-top: 360px;
+  padding-top: 320px;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -517,4 +532,8 @@ footer {
   top: 100px;
   left: 160px;
   z-index: 1;
+}
+
+.hide-item {
+  display: none;
 }

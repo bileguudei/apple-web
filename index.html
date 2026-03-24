@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,24 +15,29 @@
     />
   </head>
   <body>
-    <nav class="center">
+    <nav>
       <a href=""><img src="nav-icon/Vector.svg" alt="" /></a>
-      <a href="">Store</a>
-      <a href="">Mac</a>
-      <a href="">iPad</a>
-      <a href="">iPhone</a>
-      <a href="">Watch</a>
-      <a href="">Vision</a>
-      <a href="">AirPods</a>
-      <a href="">TV & Home</a>
-      <a href="">Entertaiment</a>
-      <a href="">Accessories</a>
-      <a href="">Support</a>
-      <a href=""><img src="nav-icon/Vector-2.svg" alt="" /></a>
-      <a href=""><img src="nav-icon/Vector-3.svg" alt="" /></a>
+      <a class="label" href="">Store</a>
+      <a class="label" href="">Mac</a>
+      <a class="label" href="">iPad</a>
+      <a class="label" href="">iPhone</a>
+      <a class="label" href="">Watch</a>
+      <a class="label" href="">Vision</a>
+      <a class="label" href="">AirPods</a>
+      <a class="label" href="">TV & Home</a>
+      <a class="label" href="">Entertaiment</a>
+      <a class="label" href="">Accessories</a>
+      <a class="label" href="">Support</a>
+      <div class="gap">
+        <a href="" id="search-icon"
+          ><img src="nav-icon/Vector-2.svg" alt=""
+        /></a>
+        <a href=""><img src="nav-icon/Vector-3.svg" alt="" /></a>
+        <a href="" id="menu-icon"><img src="nav-icon/menu.svg" alt="" /></a>
+      </div>
     </nav>
 
-    <div class="donation center">
+    <div class="donation">
       We’re donating $5 to the Global Fund for every purchase made with
       Apple Pay at Apple. Through 12/8.
     </div>
@@ -63,22 +70,45 @@
       </div>
     </main>
 
+    <div id="visible-item" class="product hide-item">
+      <div class="product-title-contain">
+        <img src="img/ipadair.png" alt="" />
+      </div>
+      <p class="product-subtitle">Now supercharged by M4.</p>
+      <div class="buttons">
+        <a href=""> <button class="button one">Learn More</button> </a>
+        <a href=""> <button class="button two">Buy</button> </a>
+      </div>
+      <p class="gradient">Hello, Apple Intelligence.</p>
+    </div>
+
     <div class="product-container">
       <div id="p1" class="product">
-        <div class="product-title-contain">
+        <div class="product-title-contain change">
           <img src="img/ipadair.png" alt="" />
         </div>
-        <p class="product-subtitle">Now supercharged by M4.</p>
+        <h3 class="black hide-item">Apple for Small Business</h3>
+        <p class="product-subtitle hide-item">
+          Hardware, software, and expert help - all in one place.
+        </p>
+        <p class="product-subtitle change">Now supercharged by M4.</p>
         <div class="buttons">
           <a href=""> <button class="button one">Learn More</button> </a>
-          <a href=""> <button class="button two">Buy</button> </a>
+          <a class="change" href="">
+            <button class="button two">Buy</button>
+          </a>
         </div>
-        <p class="gradient">Hello, Apple Intelligence.</p>
+        <p class="gradient change">Hello, Apple Intelligence.</p>
       </div>
 
       <div id="p2" class="product">
         <h3 class="white">AirPods Pro 2</h3>
-        <p class="product-subtitle white">Now with a Hearing Aid feature.2</p>
+        <p class="product-subtitle white change">
+          Now with a Hearing Aid feature.2
+        </p>
+        <p class="product-subtitle white hide-item">
+          Iconic. Now supersonic. Available with Active Noise Cancellation.2
+        </p>
         <div class="buttons">
           <a href=""> <button class="button one">Learn More</button> </a>
           <a href=""> <button class="button two">Buy</button> </a>
@@ -126,17 +156,28 @@
       </div>
 
       <div id="p6" class="product">
-        <div class="product-title-contain">
+        <div class="product-title-contain change">
           <img class="applelogo" src="img/apple.svg" alt="" />
           <h3>Card</h3>
         </div>
-        <p class="product-subtitle">
+        <h3 class="hide-item">Carrier deals at Apple</h3>
+        <p class="product-subtitle hide-item">
+          Get up to $1000 in credit on a new iPhone. Trade-in may be required.
+        </p>
+        <p class="product-subtitle change">
           Get up to 3% Daily Cash back <br />
           with every purchase.
         </p>
         <div class="buttons">
-          <a href=""> <button class="button one">Learn More</button> </a>
-          <a href=""> <button class="button two">Apply now</button> </a>
+          <a class="hide-item" href="">
+            <button class="button one">Find your deal</button>
+          </a>
+          <a class="change" href="">
+            <button class="button one">Learn More</button>
+          </a>
+          <a class="change" href="">
+            <button class="button two">Apply now</button>
+          </a>
         </div>
       </div>
     </div>
