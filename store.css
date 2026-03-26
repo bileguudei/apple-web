@@ -9,11 +9,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.h4-white {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.h5-white {
+  color: #f5f5f7;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   background-color: #f5f5f7;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
 .center {
@@ -27,7 +42,7 @@ nav {
   width: 100vw;
   height: 44px;
   background-color: #f5f5f7;
-  gap: 35px;
+  gap: 2vw;
 }
 
 nav a {
@@ -44,7 +59,7 @@ nav img {
 
 .donation {
   margin-top: 44px;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   font-size: 14px;
   color: #1d1d1f;
@@ -158,6 +173,7 @@ h3 {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  width: auto;
 }
 
 .garchig-container {
@@ -172,6 +188,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
+  height: 34px;
+  text-wrap: nowrap;
 }
 
 section {
@@ -230,12 +248,12 @@ h5 {
 }
 
 h4 {
-  height: 40px;
   color: #1d1d1f;
   font-size: 26px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.196px;
+  width: 326px;
 }
 
 p {
@@ -253,6 +271,7 @@ p {
   gap: 12px;
   display: flex;
   flex-direction: column;
+  padding: 30px;
 }
 
 .card3 {
@@ -305,6 +324,8 @@ p {
 .medeelel h4 {
   line-height: 20px;
   font-size: 18px;
+  height: 40px;
+  width: 257px;
 }
 
 .medeelel p {
@@ -312,4 +333,145 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+#holiday-picks #first {
+  background-image: url(store-img/holiday-picks-img/6da69c7f2d4d299063c16c1d325db130f08ef7ba.jpg);
+}
+
+#only-at-apple .card h4 {
+  width: 305px;
+  height: 130px;
+}
+
+#only-at-apple #first {
+  background-image: url(store-img/only-at-apple-img/93f151ac653907f22599b9fbc9ab8bcfb347d691.jpg);
+}
+
+.card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.card4-tal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card4-tal h4 {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 238px;
+  display: flex;
+  align-items: center;
+}
+
+.h5-saaral {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+#only-at-apple #second {
+  background-image: url(store-img/only-at-apple-img/54711505d840cac99050329da0237a9a79b9d07d.jpg);
+}
+
+#only-at-apple #third {
+  background-image: url(store-img/only-at-apple-img/7be9e8c4cd1a574c53bacf2396a17f1007bfc091.jpg);
+}
+
+#the-apple-experience #first {
+  background-image: url(store-img/the-apple-experience/fe1e7ece87047c95faa8a68f17e8867914317976.jpg);
+}
+
+#the-apple-experience #second {
+  background-image: url(store-img/the-apple-experience/2171b58f3ab6a95e407be2639740dad7138786d3.png);
+}
+
+#the-apple-experience #third {
+  background-image: url(store-img/the-apple-experience/7e38eec3034a854374ceb67eb6c71f4e173cee8e.jpg);
+}
+
+#the-apple-experience #fourth {
+  background-image: url(store-img/the-apple-experience/4c93c049459dcec6247af385b50ac485e92e5a45.jpg);
+}
+
+#the-apple-experience p {
+  width: 259px;
+}
+
+.garchig-break {
+  display: flex;
+  gap: 20px;
+}
+
+.break {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+#special-savings #first {
+  background-image: url(store-img/special-savings-img/57e6bdca2b0f233f809fe57ada1ba8354e54e4b4.jpg);
+}
+
+#special-savings #second {
+  background-image: url(store-img/special-savings-img/c29a91c005069048c5e1b877cf3142fa2fab6067.jpg);
+}
+
+#special-savings #third {
+  background-image: url(store-img/special-savings-img/60a49ef1a49579aa398f78daa8ab814a87b543dc.jpg);
+}
+
+#special-savings #fourth {
+  background-image: url(store-img/special-savings-img/a960f7eefe8796ce51144b229909100094a59989.jpg);
+}
+
+#special-savings #fifth {
+  background-image: url(store-img/special-savings-img/9511d82e0fa4f14f3d23b485ab3928f9d27a5012.jpg);
+}
+
+.footer-garchig {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.quick-links {
+  display: flex;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid #1d1d1f;
+}
+
+a {
+  text-decoration: none;
 }

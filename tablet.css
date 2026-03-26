@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   nav {
     justify-content: space-between;
     height: 48px;
@@ -87,7 +87,6 @@
 
   .product-subtitle {
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
@@ -126,6 +125,7 @@
 
   .stream-button {
     padding: 8px 14px;
+    text-wrap: nowrap;
   }
 
   .category {
@@ -165,6 +165,36 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
+  }
+
+  .news,
+  .music {
+    min-width: 286px !important;
+    height: 161px;
+  }
+
+  .music {
+    justify-content: center;
+  }
+
+  .music:has(.applemusicsvg) .applemusicsvg {
+    padding: 0;
+    margin-top: 95px;
+    margin-left: 30px;
+  }
+
+  #ursdag-zuragnuud .music-img {
+    width: 114px;
+    height: 114px;
+  }
+
+  #last .info {
+    display: none;
+  }
+
+  .ursdag-button {
+    top: 40%;
+    left: 35%;
   }
 
   /* .music-img {

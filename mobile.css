@@ -4,11 +4,13 @@
   }
 
   .donation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
-    max-height: 73px;
+    /* height: auto; */
+    height: 73px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 25px;
   }
 
   main {
@@ -93,11 +95,54 @@
     height: 495px;
   }
 
+  .slider-container {
+    display: none;
+  }
+
   .button {
     text-wrap: nowrap;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     padding: 8px 16px;
+  }
+
+  #slide1 {
+    background-image: url(mobile-view-img/sliders/6803192320c01991746406d30d1c209f915d5669.jpg);
+  }
+
+  #slide2 {
+    background-image: url(mobile-view-img/sliders/4cab1570e2f6107d413dfa8f5ee5529aded13420.jpg);
+  }
+
+  #slide3 {
+    background-image: url(mobile-view-img/sliders/d6d754a221c2eb7a8b29f50f4b07ed57a5561306.jpg);
+  }
+
+  #slide4 {
+    background-image: url(mobile-view-img/sliders/34e51e39872210aa06e802ad1aa23f047c1ae9d5.jpg);
+  }
+
+  #slide5 {
+    background-image: url(mobile-view-img/sliders/75cfc40b3d83f8f3ff5b779dc0a66f085f6ef502.jpg);
+  }
+
+  #slide6 {
+    background-image: url(mobile-view-img/sliders/199eb811138ceca9bab2d6eccc852b617aafa880.jpg);
+  }
+
+  #slide7 {
+    background-image: url(mobile-view-img/sliders/81561a650456e8bad8d513a061e8a144d3947254.jpg);
+  }
+
+  #slide8 {
+    background-image: url(mobile-view-img/sliders/ebb644fec1d9a1411cce640e9cc8f3aa14cff377.jpg);
+  }
+
+  #slide9,
+  #slide10,
+  #b9,
+  #b10 {
+    display: none;
   }
 }
